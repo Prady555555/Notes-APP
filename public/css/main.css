@@ -1,0 +1,55 @@
+:root{
+  --background-color:#FFC700;
+  --bs-primary-rgb:#12296c;
+  /* --background-color:white; */
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--background-color);
+  color: var(--bs-primary-rgb);
+  font-weight: 300;
+  font-size: 1rem;
+  background-image: url(../img/noise-bg.png);
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: "unbounded",cursive;
+  font-weight: 800;
+}
+.home-title{
+  font-size: 2rem;
+}
+.container-fluid-custom{
+  max-width: 1600px;
+}
+.btn{
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  border-radius: 2rem;
+}
+@media (min-width:1200px) {
+  .home{
+    background: url("../img/pradybackground.png") left top no-repeat,
+    url("../img/prady\ draw\ \(1\).png") right  no-repeat,
+    url("../img/noise-bg.png") left top no-repeat,
+    var(--background-color)
+  }
+  
+}
+.spanPradyNotes{
+  color: white;
+}
+.home-title::before{
+  content: url("../img/stars.svg");
+  position: absolute;
+  left: -50px;
+  top: -60px;
+
+}
+.home-title::after{
+  content: url("../img/stars.svg");
+  position: absolute;
+  right: -90px;
+  bottom: 160px;
+
+}
